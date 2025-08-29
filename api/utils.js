@@ -40,7 +40,7 @@ const sendEmail = async (email, name) => {
     from: process.env.EMAIL_ACCOUNT,
     to: email,
     subject: "Reserva confirmada!",
-    html: `Olá ${name}, sua reserva no nosso restaurante foi confirmada.\nAguardamos você para uma ótima experiência gastronômica.\nCaso precise alterar ou cancelar a reserva, entre em contato conosco.\n\nAté breve!`,
+    text: `Olá ${name}, sua reserva no nosso restaurante foi confirmada.\n\nAguardamos você para uma ótima experiência gastronômica.\n\nCaso precise alterar ou cancelar a reserva, entre em contato conosco.\n\n\nAté breve!`,
   };
 
   try {
