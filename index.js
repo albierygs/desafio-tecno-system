@@ -34,13 +34,16 @@ form.addEventListener("submit", async (event) => {
   const data = { name, email, phone };
 
   try {
-    const response = await fetch("http://localhost:3000/api/reserve", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    });
+    const response = await fetch(
+      "https://desafio-tecno-system-api.onrender.com/api/reserve",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      }
+    );
 
     if (response.status == 200) {
       alert("Reserva confirmada!");
