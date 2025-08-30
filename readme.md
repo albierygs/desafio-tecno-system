@@ -96,3 +96,7 @@ Não é necessário instalar dependências para o front-end, pois todos os arqui
 
 1.  Abra o arquivo `index.html` em seu navegador web para visualizar a interface do usuário.
 2.  Preencha o formulário e faça uma reserva. O front-end se comunicará com a API que você iniciou na etapa anterior.
+
+## Autores
+* [Albiery Gonçalves](https://github.com/albierygs)
+* [Cauane Galdino](https://github.com/cauanegaldino)
