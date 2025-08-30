@@ -108,7 +108,7 @@ button[type="submit"]{
 }
 }
 
-@media (max-width: 699px) and (min-width: 400px){
+@media (max-width: 699px) and (min-width: 380px){
     form{
         width: 135px;
         height: 270px;
