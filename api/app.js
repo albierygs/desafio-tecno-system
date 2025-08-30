@@ -12,6 +12,10 @@ initializeDB();
 app.use(cors());
 app.use(express.json());
 
+app.get("/api", (_request, response) => {
+  response.status(200).send();
+});
+
 app.use("/api", reserveController);
 
 app.use((_request, response) => {
