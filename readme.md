@@ -37,6 +37,8 @@ Este projeto é um desafio técnico para o processo seletivo da empresa júnior 
 
 ## Estrutura do Projeto
 
+```
+
 desafio-tecno-system/
 ├── api/
 │ ├── .gitignore
@@ -52,6 +54,8 @@ desafio-tecno-system/
 ├── index.html
 ├── index.js
 └── style.css
+
+```
 
 ## Instalação e Execução
 
