@@ -22,18 +22,19 @@ main{
 }
 
 .container-texto{
-    margin-left: 40px;
-    width: 50%;
+    margin-left: 50px;
+    width: 45%;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
     line-height: 1.6; 
     overflow-wrap: break-word;
     color: white;
+    font-size: 25px;
 }
 
 .content{
-    font-size: small;
+    font-size: 20px;
 }
 .reserva{
     color: #F1C40F;
@@ -41,16 +42,16 @@ main{
 
 form {
   margin: 0 auto;
-  width: 150px;
+  width: 250px;
   padding: 20px;
   border: 1px solid #ccc;
   background-color: white;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
-  font-size: 10px;
+  font-size: 14px;
   border-radius: 10px;
-  height: 240px;
+  height: 300px;
   gap: 15px;
   display: flex;
   flex-direction: column;
@@ -58,7 +59,6 @@ form {
 }
 
 input {
-    font-size: 12px;
     padding: 5px;
     margin-top: 4px;
     width: 90%;
@@ -66,7 +66,7 @@ input {
 
 
 #nome, #sobrenome, #email, #contato::placeholder {
-    font-size: 9px;
+    font-size: 12px;
 }
 
 #placeholder-text {
@@ -83,7 +83,53 @@ button[type="submit"]{
     background-color: #2c2c2c;
     border: #2c2c2c;
     color: white;
-    font-size: 10px;
-    height: 20px;
+    font-size: 15px;
+    height: 30px;
     cursor: pointer;
+    margin-top: 10px;
+}
+
+@media (max-width: 910px) and (min-width: 700px){
+    form{
+        width: 180px;
+    }
+
+    .container-texto{
+        width: 45%;
+        font-size: 20px;
+    }
+
+    .content{
+        font-size: 15px;
+    }
+
+    #nome, #sobrenome, #email, #contato::placeholder {
+    font-size: 10px;
+}
+}
+
+@media (max-width: 699px) and (min-width: 380px){
+    form{
+        width: 135px;
+        height: 270px;
+        font-size: 12px;
+    }
+
+    .container-texto{
+        width: 45%;
+        font-size: 15px;
+        margin-left: 20px;
+    }
+
+    .content{
+        font-size: 10px;
+    }
+
+    #nome, #sobrenome, #email, #contato::placeholder {
+    font-size: 8px;
+    }
+
+    button[type="submit"]{
+        font-size: 12px;
+    }
 }
