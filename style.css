@@ -87,3 +87,22 @@ button[type="submit"]{
     height: 20px;
     cursor: pointer;
 }
+
+@media (max-width: 590px){
+    form{
+        width: 120px;
+    }
+
+    .container-texto{
+        width: 45%;
+        font-size: 15px;
+    }
+
+    .content{
+        font-size: 10px;
+    }
+
+    #nome, #sobrenome, #email, #contato::placeholder {
+    font-size: 7px;
+}
+}
