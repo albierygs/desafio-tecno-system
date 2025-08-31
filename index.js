@@ -19,6 +19,9 @@ const form = document.querySelector("#form");
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
 
+  const button = document.querySelector("button");
+  button.disabled = true;
+
   const nome = document.querySelector("#nome").value;
   const sobrenome = document.querySelector("#sobrenome").value;
   const email = document.querySelector("#email").value;
@@ -26,6 +29,7 @@ form.addEventListener("submit", async (event) => {
 
   if (phone.replace(/\D/g, "").length < 10) {
     alert("Telefone para contato inválido.");
+    button.disabled = false;
     return;
   }
 
@@ -52,5 +56,7 @@ form.addEventListener("submit", async (event) => {
     }
   } catch (error) {
     alert("Erro ao realizar sua reserva");
+  } finally {
+    button.disabled = false;
   }
 });
